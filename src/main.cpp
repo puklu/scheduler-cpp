@@ -9,10 +9,13 @@
 
 int main() {
 
-  std::thread tasksGeneratorThread(generateTasks, NUMBER_OF_PROJECTS);
-
   Scheduler scheduler(NUMBER_OF_RESOURCES, NUMBER_OF_PROJECTS);
-  std::thread schedulerThread(&Scheduler::allocateResources, &scheduler);
+
+  std::thread tasksGeneratorThread(generateTasks, NUMBER_OF_PROJECTS,
+                                   std::ref(scheduler));
+
+  std::thread schedulerThread(
+      [&scheduler]() { scheduler.allocateResources(); });
   tasksGeneratorThread.join();
   schedulerThread.join();
 }

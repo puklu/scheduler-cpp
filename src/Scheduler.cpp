@@ -11,11 +11,13 @@ Scheduler::Scheduler(int num_of_resources, int num_of_projects) {
   }
 
   for (int j = 0; j < num_of_projects; j++) {
-    projects_queues_[j] = std::queue<Task<int, int, int>>();
+    // projects_queues_[j] = std::queue<Task<int, int, int>>();
+    projects_queues_[j] = std::queue<Task>();
   }
 }
 
-void Scheduler::addTask(Task<int, int, int> task) {
+// void Scheduler::addTask(Task<int, int, int> task) {
+void Scheduler::addTask(Task task) {
   projects_queues_[task.projectId()].push(task);
 }
 
@@ -25,9 +27,15 @@ void Scheduler::allocateResources() {
       if (!pair.second.empty()) {
         for (auto &resource : resources_) {
           if (resource.status() == "free") {
-            Task<int, int, int> task = pair.second.front();
+            // Task<int, int, int> task = pair.second.front();
+            Task task = pair.second.front();
             pair.second.pop();
             resource.assignTask(task);
+            std::cout << "task with id: " << task.taskId()
+                      << " and project id: " << task.projectId()
+                      << " assigned resource: " << resource.resourceId()
+                      << std::endl;
+
             break;
           }
         }

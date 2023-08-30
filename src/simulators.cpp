@@ -1,3 +1,5 @@
+// @file simulators.cpp
+#include "../include/simulators.hpp"
 #include "../include/Scheduler.hpp"
 #include "../include/Task.hpp"
 #include "../include/helpers.hpp"
@@ -8,7 +10,7 @@
 #include <map>
 #include <thread>
 
-void generateTasks(const int num_of_projects, Scheduler scheduler) {
+void generateTasks(const int num_of_projects, Scheduler &scheduler) {
 
   std::map<int, int> tasks_count;
 
@@ -22,9 +24,14 @@ void generateTasks(const int num_of_projects, Scheduler scheduler) {
     tasks_count[project_id]++;
     int priority = randomNumberGenerator(0, 10);
 
-    Task<int, int, int> task(task_id, project_id, priority);
+    // Task<int, int, int> task(task_id, project_id, priority);
+    Task task(task_id, project_id, priority);
 
     scheduler.addTask(task);
+
+    std::cout << "task with id: " << task.taskId()
+              << " and project id: " << task.projectId()
+              << " added to scheduler" << std::endl;
 
     // print(task.taskId());
 

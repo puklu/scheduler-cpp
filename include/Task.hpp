@@ -1,6 +1,7 @@
 #ifndef TASK_HPP_
 #define TASK_HPP_
 
+/*
 template <class T, class U, class V> class Task {
 private:
   T taskId_ = 0;
@@ -16,5 +17,20 @@ public:
 };
 
 #include "../include/Task_impl.hpp"
+*/
+
+class Task {
+private:
+  int taskId_ = 0;
+  int projectId_ = 0;
+  int priority_ = 0;
+
+public:
+  Task();
+  Task(int taskId, int projectId, int priority_);
+  const int taskId() const;
+  const int projectId() const;
+  const int priority() const;
+};
 
 #endif

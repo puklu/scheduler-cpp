@@ -16,7 +16,7 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O0")
 
 set(SOURCES
     src/main.cpp
-    # src/Task.cpp
+    src/Task.cpp
     src/loggers.cpp
     src/constants.cpp
     src/simulators.cpp

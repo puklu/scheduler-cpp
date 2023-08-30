@@ -6,10 +6,12 @@ using std::cout;
 using std::endl;
 using std::string;
 
-template <typename T> void print(const T &message) { cout << message << endl; }
+// template <typename T> void print(const T &message) { cout << message << endl;
+// }
+void printInt(const int &message) { cout << message << endl; }
 
-template void print<int>(const int &message);
-template void print<string>(const string &message);
+// template void print<int>(const int &message);
+// template void print<string>(const string &message);
 
 void printMap(std::map<int, int> myMap) {
   for (auto &pair : myMap) {

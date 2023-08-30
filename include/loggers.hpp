@@ -7,7 +7,8 @@
 
 using std::string;
 
-template <typename T> void print(const T &message);
+// template <typename T> void print(const T &message);
+void printInt(const int &message);
 
 void printMap(std::map<int, int> myMap);
 

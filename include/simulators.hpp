@@ -3,6 +3,6 @@
 
 #include "../include/Scheduler.hpp"
 
-void generateTasks(const int num_of_projects, Scheduler scheduler);
+void generateTasks(const int num_of_projects, Scheduler &scheduler);
 
 #endif
