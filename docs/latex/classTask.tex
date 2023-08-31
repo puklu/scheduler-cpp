@@ -1,0 +1,181 @@
+\hypertarget{classTask}{}\doxysection{Task Class Reference}
+\label{classTask}\index{Task@{Task}}
+
+
+Represents a task with an ID, project ID, and priority.  
+
+
+
+
+{\ttfamily \#include $<$Task.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTask_a0ca53354bdc006762a0fda68c64f7608}\label{classTask_a0ca53354bdc006762a0fda68c64f7608}} 
+{\bfseries Task} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for creating a task with uninitialized values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTask_ab7bb1ca1a1e5ce0ca98a70f59e1750fa}{Task}} (int task\+Id, int project\+Id, int priority\+\_\+)
+\begin{DoxyCompactList}\small\item\em Constructor for creating a task with specified values. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classTask_a8e052b39bc8bd0c7011fbddf0057b82f}{get\+Task\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Get the task ID. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classTask_ae05a6212a1d92a742845719a48b0eabc}{get\+Project\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Get the project ID associated with the task. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classTask_ac2f102de4bb812f6d8dfa5986d6d5124}{get\+Priority}} () const
+\begin{DoxyCompactList}\small\item\em Get the priority level of the task. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTask_a142de6533e7130b080ae12d88a34ea81}{operator$>$}} (const \mbox{\hyperlink{classTask}{Task}} \&other) const
+\begin{DoxyCompactList}\small\item\em Compare two tasks based on their priority. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTask_ab43903e28377ea13be4f9c2bc7734c82}{operator$<$}} (const \mbox{\hyperlink{classTask}{Task}} \&other) const
+\begin{DoxyCompactList}\small\item\em Compare two tasks based on their priority. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTask_adda87005cd889084c71f5cbb0a6a5986}{operator==}} (const \mbox{\hyperlink{classTask}{Task}} \&other) const
+\begin{DoxyCompactList}\small\item\em Compare two tasks for equality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a task with an ID, project ID, and priority. 
+
+The \mbox{\hyperlink{classTask}{Task}} class defines a task with properties such as task ID, project ID, and priority. It provides methods to access and compare these properties. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTask_ab7bb1ca1a1e5ce0ca98a70f59e1750fa}\label{classTask_ab7bb1ca1a1e5ce0ca98a70f59e1750fa}} 
+\index{Task@{Task}!Task@{Task}}
+\index{Task@{Task}!Task@{Task}}
+\doxysubsubsection{\texorpdfstring{Task()}{Task()}}
+{\footnotesize\ttfamily Task\+::\+Task (\begin{DoxyParamCaption}\item[{int}]{task\+Id,  }\item[{int}]{project\+Id,  }\item[{int}]{priority\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Constructor for creating a task with specified values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task\+Id} & The unique identifier for the task. \\
+\hline
+{\em project\+Id} & The project ID associated with the task. \\
+\hline
+{\em priority} & The priority level of the task. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTask_ac2f102de4bb812f6d8dfa5986d6d5124}\label{classTask_ac2f102de4bb812f6d8dfa5986d6d5124}} 
+\index{Task@{Task}!getPriority@{getPriority}}
+\index{getPriority@{getPriority}!Task@{Task}}
+\doxysubsubsection{\texorpdfstring{getPriority()}{getPriority()}}
+{\footnotesize\ttfamily const int Task\+::get\+Priority (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the priority level of the task. 
+
+\begin{DoxyReturn}{Returns}
+The priority level. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTask_ac2f102de4bb812f6d8dfa5986d6d5124_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classTask_ae05a6212a1d92a742845719a48b0eabc}\label{classTask_ae05a6212a1d92a742845719a48b0eabc}} 
+\index{Task@{Task}!getProjectId@{getProjectId}}
+\index{getProjectId@{getProjectId}!Task@{Task}}
+\doxysubsubsection{\texorpdfstring{getProjectId()}{getProjectId()}}
+{\footnotesize\ttfamily const int Task\+::get\+Project\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the project ID associated with the task. 
+
+\begin{DoxyReturn}{Returns}
+The project ID. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTask_ae05a6212a1d92a742845719a48b0eabc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classTask_a8e052b39bc8bd0c7011fbddf0057b82f}\label{classTask_a8e052b39bc8bd0c7011fbddf0057b82f}} 
+\index{Task@{Task}!getTaskId@{getTaskId}}
+\index{getTaskId@{getTaskId}!Task@{Task}}
+\doxysubsubsection{\texorpdfstring{getTaskId()}{getTaskId()}}
+{\footnotesize\ttfamily const int Task\+::get\+Task\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the task ID. 
+
+\begin{DoxyReturn}{Returns}
+The task ID. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTask_a8e052b39bc8bd0c7011fbddf0057b82f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classTask_ab43903e28377ea13be4f9c2bc7734c82}\label{classTask_ab43903e28377ea13be4f9c2bc7734c82}} 
+\index{Task@{Task}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Task@{Task}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Task\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTask}{Task}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Compare two tasks based on their priority. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other task to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this task has lower priority than the other task. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTask_adda87005cd889084c71f5cbb0a6a5986}\label{classTask_adda87005cd889084c71f5cbb0a6a5986}} 
+\index{Task@{Task}!operator==@{operator==}}
+\index{operator==@{operator==}!Task@{Task}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Task\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTask}{Task}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Compare two tasks for equality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other task to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both tasks have the same ID, project ID, and priority. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTask_a142de6533e7130b080ae12d88a34ea81}\label{classTask_a142de6533e7130b080ae12d88a34ea81}} 
+\index{Task@{Task}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Task@{Task}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Task\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTask}{Task}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Compare two tasks based on their priority. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other task to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this task has higher priority than the other task. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/puklu/\+Learning/scheduler-\/cpp/include/\mbox{\hyperlink{Task_8hpp}{Task.\+hpp}}\item 
+/home/puklu/\+Learning/scheduler-\/cpp/src/Task.\+cpp\end{DoxyCompactItemize}

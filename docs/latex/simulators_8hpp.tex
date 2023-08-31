@@ -1,0 +1,98 @@
+\hypertarget{simulators_8hpp}{}\doxysection{/home/puklu/\+Learning/scheduler-\/cpp/include/simulators.hpp File Reference}
+\label{simulators_8hpp}\index{/home/puklu/Learning/scheduler-\/cpp/include/simulators.hpp@{/home/puklu/Learning/scheduler-\/cpp/include/simulators.hpp}}
+
+
+Contains functions for simulating task generation and completion.  
+
+
+{\ttfamily \#include \char`\"{}../include/\+Scheduler.\+hpp\char`\"{}}\newline
+Include dependency graph for simulators.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{simulators_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{simulators_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{simulators_8hpp_a6ff8c453f537d372c7da904489ce75b9}{generate\+Tasks}} (const int num\+\_\+of\+\_\+projects, \mbox{\hyperlink{classScheduler}{Scheduler}} \&scheduler)
+\begin{DoxyCompactList}\small\item\em Generates tasks and adds them to the scheduler\textquotesingle{}s project queues. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{simulators_8hpp_a02176c07862438e9afee1ded5522c1cb}{complete\+Task}} (\mbox{\hyperlink{classScheduler}{Scheduler}} \&scheduler)
+\begin{DoxyCompactList}\small\item\em Simulates task completion by removing tasks from resources. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains functions for simulating task generation and completion. 
+
+\begin{DoxyAuthor}{Author}
+Vivek Punia () 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/09-\/01
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{simulators_8hpp_a02176c07862438e9afee1ded5522c1cb}\label{simulators_8hpp_a02176c07862438e9afee1ded5522c1cb}} 
+\index{simulators.hpp@{simulators.hpp}!completeTask@{completeTask}}
+\index{completeTask@{completeTask}!simulators.hpp@{simulators.hpp}}
+\doxysubsubsection{\texorpdfstring{completeTask()}{completeTask()}}
+{\footnotesize\ttfamily void complete\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classScheduler}{Scheduler}} \&}]{scheduler }\end{DoxyParamCaption})}
+
+
+
+Simulates task completion by removing tasks from resources. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scheduler} & Reference to the scheduler instance. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{simulators_8hpp_a02176c07862438e9afee1ded5522c1cb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{simulators_8hpp_a6ff8c453f537d372c7da904489ce75b9}\label{simulators_8hpp_a6ff8c453f537d372c7da904489ce75b9}} 
+\index{simulators.hpp@{simulators.hpp}!generateTasks@{generateTasks}}
+\index{generateTasks@{generateTasks}!simulators.hpp@{simulators.hpp}}
+\doxysubsubsection{\texorpdfstring{generateTasks()}{generateTasks()}}
+{\footnotesize\ttfamily void generate\+Tasks (\begin{DoxyParamCaption}\item[{const int}]{num\+\_\+of\+\_\+projects,  }\item[{\mbox{\hyperlink{classScheduler}{Scheduler}} \&}]{scheduler }\end{DoxyParamCaption})}
+
+
+
+Generates tasks and adds them to the scheduler\textquotesingle{}s project queues. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+of\+\_\+projects} & Number of projects to generate tasks for. \\
+\hline
+{\em scheduler} & Reference to the scheduler instance. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{simulators_8hpp_a6ff8c453f537d372c7da904489ce75b9_cgraph}
+\end{center}
+\end{figure}

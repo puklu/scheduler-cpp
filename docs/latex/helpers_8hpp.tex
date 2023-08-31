@@ -1,0 +1,100 @@
+\hypertarget{helpers_8hpp}{}\doxysection{/home/puklu/\+Learning/scheduler-\/cpp/include/helpers.hpp File Reference}
+\label{helpers_8hpp}\index{/home/puklu/Learning/scheduler-\/cpp/include/helpers.hpp@{/home/puklu/Learning/scheduler-\/cpp/include/helpers.hpp}}
+
+
+Contains helper functions for various tasks.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+Include dependency graph for helpers.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{helpers_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{helpers_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{helpers_8hpp_a7dc6c62497fb7fd7bbbc3695d76a11c0}{random\+Number\+Generator}} (const int lower\+Limit, const int upper\+Limit)
+\begin{DoxyCompactList}\small\item\em Generates a random integer within the specified range. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, int $>$ \mbox{\hyperlink{helpers_8hpp_aeebaaa2708b97d6630c7482c327bf5e5}{arguments\+Parser}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Parses command line arguments and returns a map of arguments and values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains helper functions for various tasks. 
+
+\begin{DoxyAuthor}{Author}
+Vivek Punia () 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/09-\/01
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{helpers_8hpp_aeebaaa2708b97d6630c7482c327bf5e5}\label{helpers_8hpp_aeebaaa2708b97d6630c7482c327bf5e5}} 
+\index{helpers.hpp@{helpers.hpp}!argumentsParser@{argumentsParser}}
+\index{argumentsParser@{argumentsParser}!helpers.hpp@{helpers.hpp}}
+\doxysubsubsection{\texorpdfstring{argumentsParser()}{argumentsParser()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, int $>$ arguments\+Parser (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Parses command line arguments and returns a map of arguments and values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of command line arguments. \\
+\hline
+{\em argv} & Array of command line argument strings. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Map of parsed arguments and their corresponding values. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{helpers_8hpp_a7dc6c62497fb7fd7bbbc3695d76a11c0}\label{helpers_8hpp_a7dc6c62497fb7fd7bbbc3695d76a11c0}} 
+\index{helpers.hpp@{helpers.hpp}!randomNumberGenerator@{randomNumberGenerator}}
+\index{randomNumberGenerator@{randomNumberGenerator}!helpers.hpp@{helpers.hpp}}
+\doxysubsubsection{\texorpdfstring{randomNumberGenerator()}{randomNumberGenerator()}}
+{\footnotesize\ttfamily int random\+Number\+Generator (\begin{DoxyParamCaption}\item[{const int}]{lower\+Limit,  }\item[{const int}]{upper\+Limit }\end{DoxyParamCaption})}
+
+
+
+Generates a random integer within the specified range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lower\+Limit} & The lower limit of the random number range. \\
+\hline
+{\em upper\+Limit} & The upper limit of the random number range. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Random integer within the specified range. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{helpers_8hpp_a7dc6c62497fb7fd7bbbc3695d76a11c0_icgraph}
+\end{center}
+\end{figure}

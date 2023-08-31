@@ -17,11 +17,14 @@ int main(int argc, char *argv[]) {
 
   Scheduler scheduler(arguments["-n"], arguments["-p"]);
 
+  /// thread to simulate generation of tasks
   std::thread tasksGeneratorThread(generateTasks, arguments["-p"],
                                    std::ref(scheduler));
 
+  /// thread to randomly remove tasks from resources
   std::thread removeTaskThread(completeTask, std::ref(scheduler));
 
+  /// thread that works on allocating the tasks to resources
   std::thread schedulerThread(
       [&scheduler]() { scheduler.allocateResources(); });
 

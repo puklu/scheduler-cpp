@@ -1,0 +1,53 @@
+\hypertarget{Task_8hpp_source}{}\doxysection{Task.\+hpp}
+\label{Task_8hpp_source}\index{/home/puklu/Learning/scheduler-\/cpp/include/Task.hpp@{/home/puklu/Learning/scheduler-\/cpp/include/Task.hpp}}
+\mbox{\hyperlink{Task_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef TASK\_HPP\_}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define TASK\_HPP\_}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{comment}{/*}}
+\DoxyCodeLine{16 \textcolor{comment}{template <class T, class U, class V> class Task \{}}
+\DoxyCodeLine{17 \textcolor{comment}{private:}}
+\DoxyCodeLine{18 \textcolor{comment}{  T taskId\_ = 0;}}
+\DoxyCodeLine{19 \textcolor{comment}{  U projectId\_ = 0;}}
+\DoxyCodeLine{20 \textcolor{comment}{  V priority\_ = 0;}}
+\DoxyCodeLine{21 \textcolor{comment}{}}
+\DoxyCodeLine{22 \textcolor{comment}{public:}}
+\DoxyCodeLine{23 \textcolor{comment}{  Task();}}
+\DoxyCodeLine{24 \textcolor{comment}{  Task(T taskId, U projectId, V priority\_);}}
+\DoxyCodeLine{25 \textcolor{comment}{  const T taskId() const;}}
+\DoxyCodeLine{26 \textcolor{comment}{  const U projectId() const;}}
+\DoxyCodeLine{27 \textcolor{comment}{  const V priority() const;}}
+\DoxyCodeLine{28 \textcolor{comment}{\};}}
+\DoxyCodeLine{29 \textcolor{comment}{}}
+\DoxyCodeLine{30 \textcolor{comment}{\#include "{}../include/Task\_impl.hpp"{}}}
+\DoxyCodeLine{31 \textcolor{comment}{*/}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{40 \textcolor{keyword}{class }\mbox{\hyperlink{classTask}{Task}} \{}
+\DoxyCodeLine{41 \textcolor{keyword}{private}:}
+\DoxyCodeLine{42   \textcolor{keywordtype}{int} taskId\_ = -\/1;}
+\DoxyCodeLine{43   \textcolor{keywordtype}{int} projectId\_ = -\/1;}
+\DoxyCodeLine{44   \textcolor{keywordtype}{int} priority\_ = -\/1;}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{keyword}{public}:}
+\DoxyCodeLine{50   \mbox{\hyperlink{classTask_a0ca53354bdc006762a0fda68c64f7608}{Task}}();}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{58   \mbox{\hyperlink{classTask_a0ca53354bdc006762a0fda68c64f7608}{Task}}(\textcolor{keywordtype}{int} taskId, \textcolor{keywordtype}{int} projectId, \textcolor{keywordtype}{int} priority\_);}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{64   \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{classTask_a8e052b39bc8bd0c7011fbddf0057b82f}{getTaskId}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{70   \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{classTask_ae05a6212a1d92a742845719a48b0eabc}{getProjectId}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{76   \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{classTask_ac2f102de4bb812f6d8dfa5986d6d5124}{getPriority}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{83   \textcolor{keywordtype}{bool} \mbox{\hyperlink{classTask_a142de6533e7130b080ae12d88a34ea81}{operator>}}(\textcolor{keyword}{const} \mbox{\hyperlink{classTask}{Task}} \&other) \textcolor{keyword}{const};}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{90   \textcolor{keywordtype}{bool} \mbox{\hyperlink{classTask_ab43903e28377ea13be4f9c2bc7734c82}{operator<}}(\textcolor{keyword}{const} \mbox{\hyperlink{classTask}{Task}} \&other) \textcolor{keyword}{const};}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{97   \textcolor{keywordtype}{bool} \mbox{\hyperlink{classTask_adda87005cd889084c71f5cbb0a6a5986}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{classTask}{Task}} \&other) \textcolor{keyword}{const};}
+\DoxyCodeLine{98 \};}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

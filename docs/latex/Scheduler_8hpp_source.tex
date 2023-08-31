@@ -1,0 +1,35 @@
+\hypertarget{Scheduler_8hpp_source}{}\doxysection{Scheduler.\+hpp}
+\label{Scheduler_8hpp_source}\index{/home/puklu/Learning/scheduler-\/cpp/include/Scheduler.hpp@{/home/puklu/Learning/scheduler-\/cpp/include/Scheduler.hpp}}
+\mbox{\hyperlink{Scheduler_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef SCHEDULER\_HPP\_}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define SCHEDULER\_HPP\_}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}../include/Resource.hpp"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../include/Task.hpp"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../include/constants.hpp"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <queue>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{29 \textcolor{keyword}{class }\mbox{\hyperlink{classScheduler}{Scheduler}} \{}
+\DoxyCodeLine{30 \textcolor{keyword}{private}:}
+\DoxyCodeLine{31   std::vector<Resource> resources\_; }
+\DoxyCodeLine{32   std::map<int,}
+\DoxyCodeLine{33            std::priority\_queue<Task, std::vector<Task>, std::greater<Task>>>}
+\DoxyCodeLine{34       projects\_queues\_; }
+\DoxyCodeLine{37 \textcolor{keyword}{public}:}
+\DoxyCodeLine{42   \mbox{\hyperlink{classScheduler_a06f968d9341563c7f95b7d091c3d9f61}{Scheduler}}(\textcolor{keywordtype}{int} num\_of\_resources, \textcolor{keywordtype}{int} num\_of\_projects);}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{48   \textcolor{comment}{// void addTask(Task<int, int, int> task);}}
+\DoxyCodeLine{49   \textcolor{keywordtype}{void} \mbox{\hyperlink{classScheduler_a46a4d94dad1d41cc53a16d4355551ae9}{addTask}}(\mbox{\hyperlink{classTask}{Task}} task);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{54   \textcolor{keywordtype}{void} \mbox{\hyperlink{classScheduler_addd1ec2812e2c90ea7e7f1aeed5ae139}{allocateResources}}();}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{60   std::vector<Resource> \&\mbox{\hyperlink{classScheduler_a7835bebe9709f91286c0552fc167d28f}{getResources}}();}
+\DoxyCodeLine{61 \};}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

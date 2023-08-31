@@ -1,0 +1,105 @@
+\hypertarget{loggers_8hpp}{}\doxysection{/home/puklu/\+Learning/scheduler-\/cpp/include/loggers.hpp File Reference}
+\label{loggers_8hpp}\index{/home/puklu/Learning/scheduler-\/cpp/include/loggers.hpp@{/home/puklu/Learning/scheduler-\/cpp/include/loggers.hpp}}
+
+
+Contains logger functions for displaying messages and information.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for loggers.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{loggers_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{loggers_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{loggers_8hpp_a4a4930425c38d7eb941dd6b655a5b6d9}{print\+Int}} (const int \&message)
+\begin{DoxyCompactList}\small\item\em Displays an integer message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{loggers_8hpp_a3ecc231ef092664f37be7f9b93e8e152}{print\+Map}} (std\+::map$<$ int, int $>$ my\+Map)
+\begin{DoxyCompactList}\small\item\em Displays the contents of a map. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{loggers_8hpp_aa859b5c3d16fe1bed1d894ed26c63337}\label{loggers_8hpp_aa859b5c3d16fe1bed1d894ed26c63337}} 
+void {\bfseries welcome\+Message} ()
+\begin{DoxyCompactList}\small\item\em Displays a welcome message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{loggers_8hpp_aabae9568587722ab3bd5e679bf02647a}{display\+Parameters}} (const int num\+\_\+of\+\_\+resources, const int num\+\_\+of\+\_\+projects)
+\begin{DoxyCompactList}\small\item\em Displays the values of parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains logger functions for displaying messages and information. 
+
+\begin{DoxyAuthor}{Author}
+Vivek Punia () 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/09-\/01
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{loggers_8hpp_aabae9568587722ab3bd5e679bf02647a}\label{loggers_8hpp_aabae9568587722ab3bd5e679bf02647a}} 
+\index{loggers.hpp@{loggers.hpp}!displayParameters@{displayParameters}}
+\index{displayParameters@{displayParameters}!loggers.hpp@{loggers.hpp}}
+\doxysubsubsection{\texorpdfstring{displayParameters()}{displayParameters()}}
+{\footnotesize\ttfamily void display\+Parameters (\begin{DoxyParamCaption}\item[{const int}]{num\+\_\+of\+\_\+resources,  }\item[{const int}]{num\+\_\+of\+\_\+projects }\end{DoxyParamCaption})}
+
+
+
+Displays the values of parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+of\+\_\+resources} & Number of resources. \\
+\hline
+{\em num\+\_\+of\+\_\+projects} & Number of projects. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{loggers_8hpp_a4a4930425c38d7eb941dd6b655a5b6d9}\label{loggers_8hpp_a4a4930425c38d7eb941dd6b655a5b6d9}} 
+\index{loggers.hpp@{loggers.hpp}!printInt@{printInt}}
+\index{printInt@{printInt}!loggers.hpp@{loggers.hpp}}
+\doxysubsubsection{\texorpdfstring{printInt()}{printInt()}}
+{\footnotesize\ttfamily void print\+Int (\begin{DoxyParamCaption}\item[{const int \&}]{message }\end{DoxyParamCaption})}
+
+
+
+Displays an integer message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The integer message to be displayed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{loggers_8hpp_a3ecc231ef092664f37be7f9b93e8e152}\label{loggers_8hpp_a3ecc231ef092664f37be7f9b93e8e152}} 
+\index{loggers.hpp@{loggers.hpp}!printMap@{printMap}}
+\index{printMap@{printMap}!loggers.hpp@{loggers.hpp}}
+\doxysubsubsection{\texorpdfstring{printMap()}{printMap()}}
+{\footnotesize\ttfamily void print\+Map (\begin{DoxyParamCaption}\item[{std\+::map$<$ int, int $>$}]{my\+Map }\end{DoxyParamCaption})}
+
+
+
+Displays the contents of a map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Map} & The map to be displayed. \\
+\hline
+\end{DoxyParams}

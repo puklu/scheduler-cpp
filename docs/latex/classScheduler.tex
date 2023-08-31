@@ -1,0 +1,106 @@
+\hypertarget{classScheduler}{}\doxysection{Scheduler Class Reference}
+\label{classScheduler}\index{Scheduler@{Scheduler}}
+
+
+Manages resource allocation and task scheduling.  
+
+
+
+
+{\ttfamily \#include $<$Scheduler.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScheduler_a06f968d9341563c7f95b7d091c3d9f61}{Scheduler}} (int num\+\_\+of\+\_\+resources, int num\+\_\+of\+\_\+projects)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classScheduler}{Scheduler}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScheduler_a46a4d94dad1d41cc53a16d4355551ae9}{add\+Task}} (\mbox{\hyperlink{classTask}{Task}} task)
+\begin{DoxyCompactList}\small\item\em Adds a task to the appropriate project queue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScheduler_addd1ec2812e2c90ea7e7f1aeed5ae139}\label{classScheduler_addd1ec2812e2c90ea7e7f1aeed5ae139}} 
+void {\bfseries allocate\+Resources} ()
+\begin{DoxyCompactList}\small\item\em Allocates resources to tasks based on priority. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classResource}{Resource}} $>$ \& \mbox{\hyperlink{classScheduler_a7835bebe9709f91286c0552fc167d28f}{get\+Resources}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the list of available resources. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages resource allocation and task scheduling. 
+
+The \mbox{\hyperlink{classScheduler}{Scheduler}} class is responsible for managing resource allocation and task scheduling. It maintains a list of resources and project queues, allowing tasks to be added and allocated to resources based on their priority. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScheduler_a06f968d9341563c7f95b7d091c3d9f61}\label{classScheduler_a06f968d9341563c7f95b7d091c3d9f61}} 
+\index{Scheduler@{Scheduler}!Scheduler@{Scheduler}}
+\index{Scheduler@{Scheduler}!Scheduler@{Scheduler}}
+\doxysubsubsection{\texorpdfstring{Scheduler()}{Scheduler()}}
+{\footnotesize\ttfamily Scheduler\+::\+Scheduler (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+of\+\_\+resources,  }\item[{int}]{num\+\_\+of\+\_\+projects }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classScheduler}{Scheduler}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+of\+\_\+resources} & Number of available resources. \\
+\hline
+{\em num\+\_\+of\+\_\+projects} & Number of projects. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScheduler_a46a4d94dad1d41cc53a16d4355551ae9}\label{classScheduler_a46a4d94dad1d41cc53a16d4355551ae9}} 
+\index{Scheduler@{Scheduler}!addTask@{addTask}}
+\index{addTask@{addTask}!Scheduler@{Scheduler}}
+\doxysubsubsection{\texorpdfstring{addTask()}{addTask()}}
+{\footnotesize\ttfamily void Scheduler\+::add\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTask}{Task}}}]{task }\end{DoxyParamCaption})}
+
+
+
+Adds a task to the appropriate project queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task} & The task to be added. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{classScheduler_a46a4d94dad1d41cc53a16d4355551ae9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{classScheduler_a46a4d94dad1d41cc53a16d4355551ae9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classScheduler_a7835bebe9709f91286c0552fc167d28f}\label{classScheduler_a7835bebe9709f91286c0552fc167d28f}} 
+\index{Scheduler@{Scheduler}!getResources@{getResources}}
+\index{getResources@{getResources}!Scheduler@{Scheduler}}
+\doxysubsubsection{\texorpdfstring{getResources()}{getResources()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classResource}{Resource}} $>$ \& Scheduler\+::get\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the list of available resources. 
+
+\begin{DoxyReturn}{Returns}
+A reference to the list of resources. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classScheduler_a7835bebe9709f91286c0552fc167d28f_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/puklu/\+Learning/scheduler-\/cpp/include/\mbox{\hyperlink{Scheduler_8hpp}{Scheduler.\+hpp}}\item 
+/home/puklu/\+Learning/scheduler-\/cpp/src/Scheduler.\+cpp\end{DoxyCompactItemize}

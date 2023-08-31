@@ -1,0 +1,127 @@
+\hypertarget{classResource}{}\doxysection{Resource Class Reference}
+\label{classResource}\index{Resource@{Resource}}
+
+
+Represents a resource in the system.  
+
+
+
+
+{\ttfamily \#include $<$Resource.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResource_a57844003c58127588bec6173c6dda407}{Resource}} (int \mbox{\hyperlink{classResource_aae959bc03bd9bedddafcd2d297b99ec6}{resource\+Id}})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classResource}{Resource}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classResource_aae959bc03bd9bedddafcd2d297b99ec6}{resource\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Get the ID of the resource. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTask}{Task}} \mbox{\hyperlink{classResource_aea75c4c706fb3b7b6b1bb1597903c8f8}{task}} ()
+\begin{DoxyCompactList}\small\item\em Get the currently assigned task. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classResource_acbd69b094a15ce0cf9dcd1d1a3cc4cc4}{status}} ()
+\begin{DoxyCompactList}\small\item\em Get the status of the resource. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResource_a1e90ee3a8bf05e87cb13fb4ad2274553}{assign\+Task}} (\mbox{\hyperlink{classTask}{Task}} \mbox{\hyperlink{classResource_aea75c4c706fb3b7b6b1bb1597903c8f8}{task}})
+\begin{DoxyCompactList}\small\item\em Assign a task to the resource. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classResource_af7651385250e741aa8379fb9337fa5ea}\label{classResource_af7651385250e741aa8379fb9337fa5ea}} 
+void {\bfseries remove\+Task} ()
+\begin{DoxyCompactList}\small\item\em Remove the currently assigned task from the resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a resource in the system. 
+
+The \mbox{\hyperlink{classResource}{Resource}} class models a resource that can be assigned tasks and used for task processing. It tracks the resource\textquotesingle{}s ID, assigned task, and status. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classResource_a57844003c58127588bec6173c6dda407}\label{classResource_a57844003c58127588bec6173c6dda407}} 
+\index{Resource@{Resource}!Resource@{Resource}}
+\index{Resource@{Resource}!Resource@{Resource}}
+\doxysubsubsection{\texorpdfstring{Resource()}{Resource()}}
+{\footnotesize\ttfamily Resource\+::\+Resource (\begin{DoxyParamCaption}\item[{int}]{resource\+Id }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classResource}{Resource}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Id} & ID for the resource. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classResource_a1e90ee3a8bf05e87cb13fb4ad2274553}\label{classResource_a1e90ee3a8bf05e87cb13fb4ad2274553}} 
+\index{Resource@{Resource}!assignTask@{assignTask}}
+\index{assignTask@{assignTask}!Resource@{Resource}}
+\doxysubsubsection{\texorpdfstring{assignTask()}{assignTask()}}
+{\footnotesize\ttfamily void Resource\+::assign\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTask}{Task}}}]{task }\end{DoxyParamCaption})}
+
+
+
+Assign a task to the resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em task} & description\+The task to be assigned. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classResource_a1e90ee3a8bf05e87cb13fb4ad2274553_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classResource_aae959bc03bd9bedddafcd2d297b99ec6}\label{classResource_aae959bc03bd9bedddafcd2d297b99ec6}} 
+\index{Resource@{Resource}!resourceId@{resourceId}}
+\index{resourceId@{resourceId}!Resource@{Resource}}
+\doxysubsubsection{\texorpdfstring{resourceId()}{resourceId()}}
+{\footnotesize\ttfamily int Resource\+::resource\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the ID of the resource. 
+
+\begin{DoxyReturn}{Returns}
+The resource\textquotesingle{}s ID. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResource_acbd69b094a15ce0cf9dcd1d1a3cc4cc4}\label{classResource_acbd69b094a15ce0cf9dcd1d1a3cc4cc4}} 
+\index{Resource@{Resource}!status@{status}}
+\index{status@{status}!Resource@{Resource}}
+\doxysubsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily std\+::string Resource\+::status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the status of the resource. 
+
+\begin{DoxyReturn}{Returns}
+The current status (\char`\"{}free\char`\"{} or \char`\"{}busy\char`\"{}). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResource_aea75c4c706fb3b7b6b1bb1597903c8f8}\label{classResource_aea75c4c706fb3b7b6b1bb1597903c8f8}} 
+\index{Resource@{Resource}!task@{task}}
+\index{task@{task}!Resource@{Resource}}
+\doxysubsubsection{\texorpdfstring{task()}{task()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTask}{Task}} Resource\+::task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the currently assigned task. 
+
+\begin{DoxyReturn}{Returns}
+The task assigned to the resource. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classResource_aea75c4c706fb3b7b6b1bb1597903c8f8_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/puklu/\+Learning/scheduler-\/cpp/include/\mbox{\hyperlink{Resource_8hpp}{Resource.\+hpp}}\item 
+/home/puklu/\+Learning/scheduler-\/cpp/src/Resource.\+cpp\end{DoxyCompactItemize}

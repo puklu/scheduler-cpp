@@ -1,0 +1,30 @@
+This tool implements a resource allocation system where tasks from different projects are efficiently allocated to available resources based on priorities.
+
+Each resource executes 1 task and the resource is fully occupied until this task is completed. \mbox{\hyperlink{classScheduler}{Scheduler}} balances the computational resources to all projects equally (regardless of queue length, lots of activity on one project does not clog the processing of others)\hypertarget{md__home_puklu_Learning_scheduler_cpp_README_autotoc_md1}{}\doxysection{Priority Functionality}\label{md__home_puklu_Learning_scheduler_cpp_README_autotoc_md1}
+Tasks are allocated based on their assigned priorities. The scheduling algorithm ensures that higher-\/priority tasks are given precedence over lower-\/priority tasks. This feature ensures that critical tasks are completed in a timely manner, maintaining efficient resource utilization.\hypertarget{md__home_puklu_Learning_scheduler_cpp_README_autotoc_md2}{}\doxysection{Equal Project Importance}\label{md__home_puklu_Learning_scheduler_cpp_README_autotoc_md2}
+To prevent any single project from disproportionately hogging resources, the scheduler equally distributes resources among all projects. This approach ensures that every project receives fair access to available resources, regardless of the number of tasks or their durations.\hypertarget{md__home_puklu_Learning_scheduler_cpp_README_autotoc_md3}{}\doxysection{Usage}\label{md__home_puklu_Learning_scheduler_cpp_README_autotoc_md3}
+
+\begin{DoxyEnumerate}
+\item Navigate to the project folder.
+\item Open the terminal in the current directory and run\+: \begin{DoxyVerb}   ./bin/main -n <number-of-resources> -p <number-of-projects>
+\end{DoxyVerb}
+
+\end{DoxyEnumerate}
+
+The tool accepts the following parameters\+: \begin{DoxyVerb}    1. `-n`: Total number of resources available.
+
+    2. `-p`: Total number of projects.
+
+           Default location is the root of this project if not provided by the user.
+\end{DoxyVerb}
+ Both of the parameters are optional but recommended based on the use case. The default values are {\ttfamily n=3} and {\ttfamily p=5} which can be changed in file {\ttfamily src/constants.\+cpp}
+
+Example 1\+: For {\ttfamily Number of resources = 12} {\ttfamily Number of projects = 50}
+
+./bin/main -\/n 12 -\/p 50
+
+Example 2\+: This will run the program with default values\+: {\ttfamily Number of resources = 3} {\ttfamily Number of projects = 5}
+
+./bin/main\hypertarget{md__home_puklu_Learning_scheduler_cpp_README_autotoc_md4}{}\doxysection{Task simulation}\label{md__home_puklu_Learning_scheduler_cpp_README_autotoc_md4}
+Arrival of tasks and completion of tasks has been simulated to verify the functionality. Tasks are generated randomly with a random number denoting its priority. Tasks are also completed randomly for simulation.\hypertarget{md__home_puklu_Learning_scheduler_cpp_README_autotoc_md5}{}\doxysubsection{Stopping the Program}\label{md__home_puklu_Learning_scheduler_cpp_README_autotoc_md5}
+The program can be stopped by sending an interrupt signal using Ctrl + C in the terminal where it is running. Upon receiving the interrupt signal, the program will gracefully terminate and clean up any resources that were in use. 

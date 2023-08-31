@@ -1,0 +1,37 @@
+\hypertarget{Resource_8hpp_source}{}\doxysection{Resource.\+hpp}
+\label{Resource_8hpp_source}\index{/home/puklu/Learning/scheduler-\/cpp/include/Resource.hpp@{/home/puklu/Learning/scheduler-\/cpp/include/Resource.hpp}}
+\mbox{\hyperlink{Resource_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef RESOURCE\_HPP\_}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define RESOURCE\_HPP\_}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}../include/Task.hpp"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{25 \textcolor{keyword}{class }\mbox{\hyperlink{classResource}{Resource}} \{}
+\DoxyCodeLine{26 \textcolor{keyword}{private}:}
+\DoxyCodeLine{27   \textcolor{keywordtype}{int} resourceId\_;}
+\DoxyCodeLine{28   \textcolor{comment}{// Task<int, int, int> task\_;}}
+\DoxyCodeLine{29   \mbox{\hyperlink{classTask}{Task}} task\_;}
+\DoxyCodeLine{30   std::string status\_ = \textcolor{stringliteral}{"{}free"{}};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{public}:}
+\DoxyCodeLine{38   \mbox{\hyperlink{classResource_a57844003c58127588bec6173c6dda407}{Resource}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{classResource_aae959bc03bd9bedddafcd2d297b99ec6}{resourceId}});}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{45   \textcolor{keywordtype}{int} \mbox{\hyperlink{classResource_aae959bc03bd9bedddafcd2d297b99ec6}{resourceId}}();}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{51   \textcolor{comment}{// Task<int, int, int> task();}}
+\DoxyCodeLine{52   \mbox{\hyperlink{classTask}{Task}} \mbox{\hyperlink{classResource_aea75c4c706fb3b7b6b1bb1597903c8f8}{task}}();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{59   std::string \mbox{\hyperlink{classResource_acbd69b094a15ce0cf9dcd1d1a3cc4cc4}{status}}();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{65   \textcolor{comment}{// void assignTask(Task<int, int, int> task);}}
+\DoxyCodeLine{66   \textcolor{keywordtype}{void} \mbox{\hyperlink{classResource_a1e90ee3a8bf05e87cb13fb4ad2274553}{assignTask}}(\mbox{\hyperlink{classTask}{Task}} \mbox{\hyperlink{classResource_aea75c4c706fb3b7b6b1bb1597903c8f8}{task}});}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{72   \textcolor{keywordtype}{void} \mbox{\hyperlink{classResource_af7651385250e741aa8379fb9337fa5ea}{removeTask}}();}
+\DoxyCodeLine{73 \};}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
