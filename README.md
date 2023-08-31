@@ -24,7 +24,7 @@ available resources, regardless of the number of tasks or their durations.
 1. Navigate to the project folder.
 2. Open the terminal in the current directory and run:
 
-          ./main -n <number-of-resources> -p <number-of-projects>
+          ./bin/main -n <number-of-resources> -p <number-of-projects>
 
 
 The tool accepts the following parameters:
@@ -42,13 +42,13 @@ Example 1: For
         `Number of resources = 12`
         `Number of projects = 50`
 
-         ./main -n 12 -p 50
+         ./bin/main -n 12 -p 50
 
 Example 2: This will run the program with default values:
             `Number of resources = 3`
             `Number of projects = 5`
 
-         ./main
+         ./bin/main
 
 ## Task simulation
 Arrival of tasks and completion of tasks has been simulated to verify 
