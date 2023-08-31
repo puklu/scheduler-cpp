@@ -29,13 +29,20 @@ void generateTasks(const int num_of_projects, Scheduler &scheduler) {
 
     scheduler.addTask(task);
 
-    std::cout << "task with id: " << task.taskId()
-              << " and project id: " << task.projectId()
-              << " added to scheduler" << std::endl;
-
-    // print(task.taskId());
-
     std::this_thread::sleep_for(
         std::chrono::seconds(randomNumberGenerator(2, 5)));
+  }
+}
+
+void completeTask(Scheduler &scheduler) {
+  while (true) {
+    int resourceToChoose =
+        randomNumberGenerator(0, scheduler.getResources().size() - 1);
+    Resource resourceToComplete = scheduler.getResources()[resourceToChoose];
+
+    resourceToComplete.removeTask();
+
+    std::this_thread::sleep_for(
+        std::chrono::seconds(randomNumberGenerator(7, 10)));
   }
 }

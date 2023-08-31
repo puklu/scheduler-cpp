@@ -24,6 +24,8 @@ public:
   // setters
   // void assignTask(Task<int, int, int> task);
   void assignTask(Task task);
+
+  void removeTask();
 };
 
 #endif

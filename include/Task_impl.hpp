@@ -22,16 +22,4 @@ template <class T, class U, class V> const V Task<T, U, V>::priority() const {
   return priority_;
 }
 */
-
-Task::Task(){};
-
-Task::Task(int taskId, int projectId, int priority)
-    : taskId_(taskId), projectId_(projectId), priority_(priority) {}
-
-const int Task::taskId() const { return taskId_; }
-
-const int Task::projectId() const { return projectId_; }
-
-const int Task::priority() const { return priority_; }
-
 #endif

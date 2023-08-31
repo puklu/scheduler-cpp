@@ -12,13 +12,17 @@ class Scheduler {
 private:
   std::vector<Resource> resources_;
   // std::map<int, std::queue<Task<int, int, int>>> projects_queues_;
-  std::map<int, std::queue<Task>> projects_queues_;
+  // std::map<int, std::priority_queue<Task>> projects_queues_;
+  std::map<int,
+           std::priority_queue<Task, std::vector<Task>, std::greater<Task>>>
+      projects_queues_;
 
 public:
   Scheduler(int num_of_resources, int num_of_projects);
   // void addTask(Task<int, int, int> task);
   void addTask(Task task);
   void allocateResources();
+  std::vector<Resource> getResources();
 };
 
 #endif

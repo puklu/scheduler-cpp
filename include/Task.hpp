@@ -21,16 +21,20 @@ public:
 
 class Task {
 private:
-  int taskId_ = 0;
-  int projectId_ = 0;
-  int priority_ = 0;
+  int taskId_ = -1;
+  int projectId_ = -1;
+  int priority_ = -1;
 
 public:
   Task();
   Task(int taskId, int projectId, int priority_);
-  const int taskId() const;
-  const int projectId() const;
-  const int priority() const;
+  const int getTaskId() const;
+  const int getProjectId() const;
+  const int getPriority() const;
+
+  bool operator>(const Task &other) const;
+  bool operator<(const Task &other) const;
+  bool operator==(const Task &other) const;
 };
 
 #endif
