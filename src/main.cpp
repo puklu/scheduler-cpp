@@ -21,6 +21,4 @@ int main() {
   tasksGeneratorThread.join();
   schedulerThread.join();
   removeTaskThread.join();
-
-  std::cout << "Program terminated." << std::endl;
 }

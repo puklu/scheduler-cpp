@@ -24,13 +24,13 @@ Scheduler::Scheduler(int num_of_resources, int num_of_projects) {
 // void Scheduler::addTask(Task<int, int, int> task) {
 void Scheduler::addTask(Task task) {
   projects_queues_[task.getProjectId()].push(task);
-  std::cout << " task with id: " << task.getTaskId()
+  std::cout << "  task with id: " << task.getTaskId()
             << ", project id: " << task.getProjectId()
-            << ", priority: " << task.getPriority() << " added to scheduler"
+            << ", priority: " << task.getPriority() << ", added to scheduler"
             << std::endl;
 }
 
-std::vector<Resource> Scheduler::getResources() { return resources_; }
+std::vector<Resource> &Scheduler::getResources() { return resources_; }
 
 void Scheduler::allocateResources() {
   while (true) {

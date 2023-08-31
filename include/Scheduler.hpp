@@ -22,7 +22,7 @@ public:
   // void addTask(Task<int, int, int> task);
   void addTask(Task task);
   void allocateResources();
-  std::vector<Resource> getResources();
+  std::vector<Resource> &getResources();
 };
 
 #endif

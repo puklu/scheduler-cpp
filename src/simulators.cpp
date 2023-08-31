@@ -35,10 +35,11 @@ void generateTasks(const int num_of_projects, Scheduler &scheduler) {
 }
 
 void completeTask(Scheduler &scheduler) {
+  // std::vector<Resource> &resources = scheduler.getResources();
   while (true) {
     int resourceToChoose =
         randomNumberGenerator(0, scheduler.getResources().size() - 1);
-    Resource resourceToComplete = scheduler.getResources()[resourceToChoose];
+    Resource &resourceToComplete = scheduler.getResources()[resourceToChoose];
 
     resourceToComplete.removeTask();
 
